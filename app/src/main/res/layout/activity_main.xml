@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mbtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Identificação do usuário"
+        android:textAlignment="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nome " />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sexo" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/sexoMasc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino" />
+
+                <RadioButton
+                    android:id="@+id/sexoFem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feminino" />
+
+                <RadioButton
+                    android:id="@+id/sexoOutro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Outro" />
+            </RadioGroup>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editIdade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Idade"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Data de nascimento"
+                    android:inputType="date" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número de horas trabalhadas por semana:" />
+
+            <CheckBox
+                android:id="@+id/checkBox16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Menos de 20" />
+
+            <CheckBox
+                android:id="@+id/opc20a40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="20 a 40" />
+
+            <CheckBox
+                android:id="@+id/checkBox18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="41 a 60" />
+
+            <CheckBox
+                android:id="@+id/opcMaisD60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Mais de 60" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Atividades desempenhadas no trabalho (+  de 25%)" />
+
+            <CheckBox
+                android:id="@+id/checkBox20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sentar na cadeira" />
+
+            <CheckBox
+                android:id="@+id/caminhando"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Caminhar" />
+
+            <CheckBox
+                android:id="@+id/checkBox22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dirigir" />
+
+            <CheckBox
+                android:id="@+id/checkBox23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ficar de pé" />
+
+            <CheckBox
+                android:id="@+id/levPeso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Levantar ou carregar pesos" />
+
+            <CheckBox
+                android:id="@+id/checkBox25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Outros" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marque aqueles que tenham tido alguma cardiopatia antes dos 50 anos:" />
+
+            <CheckBox
+                android:id="@+id/idPai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pai" />
+
+            <CheckBox
+                android:id="@+id/idMae"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mãe" />
+
+            <CheckBox
+                android:id="@+id/idirmao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Irmão(a)" />
+
+            <CheckBox
+                android:id="@+id/idavo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Avó/Avô" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marque as intervenções cirúgicas que você tenha feito " />
+
+            <CheckBox
+                android:id="@+id/checkBox30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coluna" />
+
+            <CheckBox
+                android:id="@+id/coracao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coração" />
+
+            <CheckBox
+                android:id="@+id/checkBox32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rim" />
+
+            <CheckBox
+                android:id="@+id/checkBox33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pulmão" />
+
+            <CheckBox
+                android:id="@+id/checkBox34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Articulação" />
+
+            <CheckBox
+                android:id="@+id/checkBox35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Olhos" />
+
+            <CheckBox
+                android:id="@+id/checkBox37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hernia de disco" />
+
+            <CheckBox
+                android:id="@+id/checkBox38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Outro" />
+
+            <CheckBox
+                android:id="@+id/checkBox39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Não" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marque os problemas abaixo que tenha sido diagnosticado ou tratado por algum médico" />
+
+            <CheckBox
+                android:id="@+id/checkBox40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alcoolismo" />
+
+            <CheckBox
+                android:id="@+id/checkBox41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Artrite" />
+
+            <CheckBox
+                android:id="@+id/checkBox42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diabetes" />
+
+            <CheckBox
+                android:id="@+id/idMuscular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Problema musculares" />
+
+            <CheckBox
+                android:id="@+id/checkBox44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Problema renal" />
+
+            <CheckBox
+                android:id="@+id/checkBox45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Problema ocular" />
+
+            <CheckBox
+                android:id="@+id/pAlta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pressão arterial alta" />
+
+            <CheckBox
+                android:id="@+id/checkBox47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Úsera" />
+
+            <CheckBox
+                android:id="@+id/checkBox48"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AVC" />
+
+            <CheckBox
+                android:id="@+id/checkBox50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Asma" />
+
+            <CheckBox
+                android:id="@+id/checkBox49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anemia" />
+
+            <CheckBox
+                android:id="@+id/checkBox51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Outro" />
+
+            <CheckBox
+                android:id="@+id/checkBox52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Não" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="#56F39C"
+                android:onClick="openDialog"
+                android:text="Enviar"
+                android:textColor="#F6F1F1" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
